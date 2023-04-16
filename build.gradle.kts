@@ -2,6 +2,7 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.gradle.internal.os.OperatingSystem
 import org.gradle.nativeplatform.platform.internal.DefaultNativePlatform
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.net.URI
 
 group = "org.openrndr.template"
 version = "1.0.0"
@@ -99,7 +100,7 @@ repositories {
 }
 
 dependencies {
-
+    implementation("io.ktor:ktor-network:2.2.4")
 //    implementation(libs.jsoup)
 //    implementation(libs.gson)
 //    implementation(libs.csv)
